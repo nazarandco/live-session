@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 65%;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  font-family: 'Karla', sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    width: 95%;
+  }
+}
+
+@import 'navigation.scss';
+@import 'products.scss';
