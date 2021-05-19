@@ -6,7 +6,7 @@ body {
   width: 65%;
   margin: 0 auto;
   background-color: #f7f7f7;
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
 @media screen and (max-width: 1200px) {
@@ -27,8 +27,6 @@ select {
   font-weight: 700;
   margin-top: 10px;
   margin-left: -5px;
-  /* -webkit-appearance: none;
-    -moz-appearance: none; */
 }
 
 .navigation {
@@ -43,7 +41,8 @@ select {
 .search {
   display: flex;
 }
-.search__filter, .search__sort {
+.search__filter,
+.search__sort {
   display: flex;
   flex-direction: column;
   font-weight: 700;
