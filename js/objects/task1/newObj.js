@@ -32,7 +32,6 @@
 
 function addPropertyV1(obj, key, value) {
     // put your code here
-  }
   obj[key] = value;
   return obj;
 }
@@ -46,18 +45,26 @@ function addPropertyV2(obj, key, value) {
 
 // console.log(addPropertyV2({cups: 'big'}, 'plates', 'medium'));
 
-function addPropertyV3(obj, key, value) {
-    // in: objects
-    // out: object
-    const sourceObj = { [key]: value };
-    return Object.assign({}, obj, sourceObj);
-  }
+// function addPropertyV3(obj, key, value) {
+//     // in: objects
+//     // out: object
+//     const sourceObj = { [key]: value };
+//     return Object.assign({}, obj, sourceObj);
+//   }
   
-  const obj2 = {cups: 'big'};
-  console.log(addPropertyV3(obj2 , 'plates', 'medium'));
-  console.log(obj2);
+//   const obj2 = {cups: 'big'};
+//   console.log(addPropertyV3(obj2 , 'plates', 'medium'));
+//   console.log(obj2);
 
 // put your code here
+
+function addPropertyV4(obj, key, value) {
+  return {...obj, [key]: value};
+}
+
+const obj2 = {cups: 'big'};
+console.log(addPropertyV4(obj2 , 'plates', 'medium'));
+console.log(obj2);
 
 // put your code here
 
