@@ -1,9 +1,6 @@
-const baseUrl = 'https://60c9e9df772a760017204c05.mockapi.io/api/v1/form';
+const baseUrl = 'https://60d49bf961160900173cbb6b.mockapi.io/api/v1/submitters';
 const buttonElement = document.querySelector('.submit-button');
 const formElement = document.querySelector('.login-form');
-const inputEmail = document.querySelector('#email');
-const inputName = document.querySelector('#name');
-const inputPasword = document.querySelector('#password');
 const errorElement = document.querySelector('.error-text');
 
 const validateHandler = () => {
@@ -11,7 +8,7 @@ const validateHandler = () => {
 };
 validateHandler();
 
-const getFormData = () => Object.fromEntries(new FormData(formElement));
+const getFormData = Object.fromEntries(new FormData(formElement));
 
 const submitHandler = (event) => {
   event.preventDefault();
