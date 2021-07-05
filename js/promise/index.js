@@ -7,7 +7,7 @@ const validateHandler = () => {
   buttonElement.disabled = !formElement.reportValidity();
 };
 
-const formData = Object.fromEntries(new FormData(formElement));
+const formData = () => Object.fromEntries(new FormData(formElement));
 
 const submitHandler = (event) => {
   event.preventDefault();
@@ -17,7 +17,7 @@ const submitHandler = (event) => {
     headers: {
       'Content-Type': 'application/json;charset=utf-8',
     },
-    body: JSON.stringify(formData),
+    body: JSON.stringify(formData()),
   })
     .then((response) => response.json())
     .then((result) => {
